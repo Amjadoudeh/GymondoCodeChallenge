@@ -7,6 +7,7 @@ class ExercisesListViewController: UIViewController {
         super.viewDidLoad()
         setUpCollectionView()
         setupConstraints()
+        setupNavBar()
     }
 
 }
@@ -27,6 +28,10 @@ extension ExercisesListViewController: UICollectionViewDataSource, UICollectionV
 }
 
 private extension ExercisesListViewController {
+    func setupNavBar() {
+        self.navigationController?.navigationBar.topItem?.title = "List of Exercises"
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+    }
 
     func setUpCollectionView() {
         let layout = UICollectionViewFlowLayout()
@@ -42,6 +47,7 @@ private extension ExercisesListViewController {
         collectionView.delegate = self
         collectionView.register(ExerciseCardCollectionViewCell.self, forCellWithReuseIdentifier: ExerciseCardCollectionViewCell.identifier)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.backgroundColor = .white.withAlphaComponent(0.8)
         view.addSubview(collectionView)
     }
 
