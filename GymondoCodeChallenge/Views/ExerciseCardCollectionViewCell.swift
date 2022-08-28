@@ -28,7 +28,7 @@ class ExerciseCardCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         contentView.addSubview(exLabelView)
         contentView.addSubview(exImageView)
-        contentView.clipsToBounds = true
+
     }
 
     required init?(coder: NSCoder) {
@@ -43,4 +43,12 @@ class ExerciseCardCollectionViewCell: UICollectionViewCell {
         exImageView.frame = CGRect(x: 15, y: 0, width: contentView.frame.size.width-30, height: contentView.frame.size.height-50)
     }
 
+    public func configure(label: String) {
+        exLabelView.text = label
+    }
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        exLabelView.text = nil
+    }
 }

@@ -18,12 +18,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        let vc = ExercisesListViewController()
+        let vm = ExercisesViewModel(exerciseService: ExerciseManager())
+        let vc = ExercisesListViewController(viewModel: vm)
         nav = UINavigationController(rootViewController: vc)
         nav.setViewControllers([vc], animated: true)
         window.rootViewController = nav
         self.window = window
-        window.makeKeyAndVisible()    }
+        window.makeKeyAndVisible()
+    }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

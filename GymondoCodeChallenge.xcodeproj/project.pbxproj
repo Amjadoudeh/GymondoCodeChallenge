@@ -10,7 +10,6 @@
 		D0E7AD1828BBFF47001DA0D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD1728BBFF47001DA0D3 /* AppDelegate.swift */; };
 		D0E7AD1A28BBFF47001DA0D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD1928BBFF47001DA0D3 /* SceneDelegate.swift */; };
 		D0E7AD1C28BBFF47001DA0D3 /* ExercisesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD1B28BBFF47001DA0D3 /* ExercisesListViewController.swift */; };
-		D0E7AD1F28BBFF47001DA0D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0E7AD1D28BBFF47001DA0D3 /* Main.storyboard */; };
 		D0E7AD2128BBFF49001DA0D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E7AD2028BBFF49001DA0D3 /* Assets.xcassets */; };
 		D0E7AD2428BBFF49001DA0D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0E7AD2228BBFF49001DA0D3 /* LaunchScreen.storyboard */; };
 		D0E7AD2F28BBFF49001DA0D3 /* GymondoCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD2E28BBFF49001DA0D3 /* GymondoCodeChallengeTests.swift */; };
@@ -19,6 +18,7 @@
 		D0E7AD4928BC0246001DA0D3 /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD4828BC0246001DA0D3 /* ExerciseModel.swift */; };
 		D0E7AD4C28BC04CB001DA0D3 /* ExerciseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD4B28BC04CB001DA0D3 /* ExerciseManager.swift */; };
 		D0E7AD5028BC074A001DA0D3 /* ExerciseCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD4F28BC074A001DA0D3 /* ExerciseCardCollectionViewCell.swift */; };
+		D0E7AD5228BC12D1001DA0D3 /* ExercisesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD5128BC12D1001DA0D3 /* ExercisesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,6 @@
 		D0E7AD1728BBFF47001DA0D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0E7AD1928BBFF47001DA0D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D0E7AD1B28BBFF47001DA0D3 /* ExercisesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesListViewController.swift; sourceTree = "<group>"; };
-		D0E7AD1E28BBFF47001DA0D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0E7AD2028BBFF49001DA0D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0E7AD2328BBFF49001DA0D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0E7AD2528BBFF49001DA0D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +54,7 @@
 		D0E7AD4828BC0246001DA0D3 /* ExerciseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseModel.swift; sourceTree = "<group>"; };
 		D0E7AD4B28BC04CB001DA0D3 /* ExerciseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseManager.swift; sourceTree = "<group>"; };
 		D0E7AD4F28BC074A001DA0D3 /* ExerciseCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		D0E7AD5128BC12D1001DA0D3 /* ExercisesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +108,9 @@
 				D0E7AD1728BBFF47001DA0D3 /* AppDelegate.swift */,
 				D0E7AD1928BBFF47001DA0D3 /* SceneDelegate.swift */,
 				D0E7AD4A28BC024A001DA0D3 /* Model */,
-				D0E7AD4D28BC0589001DA0D3 /* Network */,
+				D0E7AD5328BC1318001DA0D3 /* ViewModel */,
 				D0E7AD4E28BC0651001DA0D3 /* Views */,
-				D0E7AD1D28BBFF47001DA0D3 /* Main.storyboard */,
+				D0E7AD4D28BC0589001DA0D3 /* Network */,
 				D0E7AD2028BBFF49001DA0D3 /* Assets.xcassets */,
 				D0E7AD2228BBFF49001DA0D3 /* LaunchScreen.storyboard */,
 				D0E7AD2528BBFF49001DA0D3 /* Info.plist */,
@@ -158,6 +158,14 @@
 				D0E7AD4F28BC074A001DA0D3 /* ExerciseCardCollectionViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D0E7AD5328BC1318001DA0D3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D0E7AD5128BC12D1001DA0D3 /* ExercisesViewModel.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +274,6 @@
 			files = (
 				D0E7AD2428BBFF49001DA0D3 /* LaunchScreen.storyboard in Resources */,
 				D0E7AD2128BBFF49001DA0D3 /* Assets.xcassets in Resources */,
-				D0E7AD1F28BBFF47001DA0D3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E7AD5228BC12D1001DA0D3 /* ExercisesViewModel.swift in Sources */,
 				D0E7AD1C28BBFF47001DA0D3 /* ExercisesListViewController.swift in Sources */,
 				D0E7AD4C28BC04CB001DA0D3 /* ExerciseManager.swift in Sources */,
 				D0E7AD1828BBFF47001DA0D3 /* AppDelegate.swift in Sources */,
@@ -333,14 +341,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D0E7AD1D28BBFF47001DA0D3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D0E7AD1E28BBFF47001DA0D3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D0E7AD2228BBFF49001DA0D3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -478,7 +478,6 @@
 				INFOPLIST_FILE = GymondoCodeChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -507,7 +506,6 @@
 				INFOPLIST_FILE = GymondoCodeChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

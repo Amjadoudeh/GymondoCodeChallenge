@@ -1,10 +1,39 @@
 import UIKit
+import SwiftUI
+import Combine
 
 class ExercisesListViewController: UIViewController {
+    @ObservedObject var viewModel: ExercisesViewModel
+
+    var exercises: [Exercise] = []
+    var cancellables = Set<AnyCancellable>()
     var collectionView: UICollectionView!
+
+    // constructor injection
+    init(viewModel: ExercisesViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.viewModel.loadExercises()
+        self.viewModel.$state.sink {
+            switch $0 {
+            case .loaded(exercies: let e):
+                self.exercises = e
+                self.collectionView.reloadData()
+            case .loading:
+                print("I am loading")
+            default:
+                ()
+            }
+        }.store(in: &cancellables)
+
         setUpCollectionView()
         setupConstraints()
         setupNavBar()
@@ -18,11 +47,13 @@ extension ExercisesListViewController: UICollectionViewDataSource, UICollectionV
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
+        return self.exercises.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ExerciseCardCollectionViewCell.identifier, for: indexPath) as! ExerciseCardCollectionViewCell
+        let exercise = exercises[indexPath.row]
+        cell.configure(label: exercise.name)
         return cell
     }
 }
@@ -39,9 +70,9 @@ private extension ExercisesListViewController {
         layout.sectionInset = UIEdgeInsets(top: 40, left: 20, bottom: 20, right: 20)
         layout.minimumLineSpacing = 30
         layout.minimumInteritemSpacing = 30
-        layout.itemSize = CGSize(width: ( view.frame.width),
+        layout.itemSize = CGSize(width: (view.frame.width-40),
                                  height: (view.frame.height/3)
-        )
+       )
         collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
         collectionView.dataSource = self
         collectionView.delegate = self
