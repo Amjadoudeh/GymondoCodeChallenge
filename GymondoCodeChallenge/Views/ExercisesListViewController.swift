@@ -53,7 +53,11 @@ extension ExercisesListViewController: UICollectionViewDataSource, UICollectionV
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ExerciseCardCollectionViewCell.identifier, for: indexPath) as! ExerciseCardCollectionViewCell
         let exercise = exercises[indexPath.row]
-        cell.configure(label: exercise.name)
+        var imageURL: URL?
+        if let imageURLString = exercise.images?.first?.image {
+            imageURL = URL(string: imageURLString)
+        }
+        cell.configure(label: exercise.name, url: imageURL)
         return cell
     }
 }

@@ -1,11 +1,12 @@
 import UIKit
+import Kingfisher
 
 class ExerciseCardCollectionViewCell: UICollectionViewCell {
     static let identifier = "ExerciseCardCollectionViewCell"
 
     private let exImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(systemName: "house")
+        imageView.image = UIImage(systemName: "")
         imageView.backgroundColor = .white.withAlphaComponent(0.2)
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
@@ -43,12 +44,16 @@ class ExerciseCardCollectionViewCell: UICollectionViewCell {
         exImageView.frame = CGRect(x: 15, y: 0, width: contentView.frame.size.width-30, height: contentView.frame.size.height-50)
     }
 
-    public func configure(label: String) {
+    public func configure(label: String, url: URL?) {
         exLabelView.text = label
+        if let url = url  {
+            exImageView.kf.setImage(with: url, placeholder: UIImage(named: "placeholderImage"))
+        }
     }
 
     override func prepareForReuse() {
         super.prepareForReuse()
         exLabelView.text = nil
+        exImageView.image = nil
     }
 }
