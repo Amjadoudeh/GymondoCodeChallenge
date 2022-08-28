@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D092D19528BC1FAF00CA1A44 /* ExerciseDetailsCradView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D092D19428BC1FAF00CA1A44 /* ExerciseDetailsCradView.swift */; };
 		D0E7AD1828BBFF47001DA0D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD1728BBFF47001DA0D3 /* AppDelegate.swift */; };
 		D0E7AD1A28BBFF47001DA0D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD1928BBFF47001DA0D3 /* SceneDelegate.swift */; };
-		D0E7AD1C28BBFF47001DA0D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD1B28BBFF47001DA0D3 /* ViewController.swift */; };
-		D0E7AD1F28BBFF47001DA0D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0E7AD1D28BBFF47001DA0D3 /* Main.storyboard */; };
+		D0E7AD1C28BBFF47001DA0D3 /* ExercisesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD1B28BBFF47001DA0D3 /* ExercisesListViewController.swift */; };
 		D0E7AD2128BBFF49001DA0D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E7AD2028BBFF49001DA0D3 /* Assets.xcassets */; };
 		D0E7AD2428BBFF49001DA0D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0E7AD2228BBFF49001DA0D3 /* LaunchScreen.storyboard */; };
 		D0E7AD2F28BBFF49001DA0D3 /* GymondoCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD2E28BBFF49001DA0D3 /* GymondoCodeChallengeTests.swift */; };
 		D0E7AD3928BBFF49001DA0D3 /* GymondoCodeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD3828BBFF49001DA0D3 /* GymondoCodeChallengeUITests.swift */; };
 		D0E7AD3B28BBFF49001DA0D3 /* GymondoCodeChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD3A28BBFF49001DA0D3 /* GymondoCodeChallengeUITestsLaunchTests.swift */; };
+		D0E7AD4928BC0246001DA0D3 /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD4828BC0246001DA0D3 /* ExerciseModel.swift */; };
+		D0E7AD4C28BC04CB001DA0D3 /* ExerciseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD4B28BC04CB001DA0D3 /* ExerciseManager.swift */; };
+		D0E7AD5028BC074A001DA0D3 /* ExerciseCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD4F28BC074A001DA0D3 /* ExerciseCardCollectionViewCell.swift */; };
+		D0E7AD5228BC12D1001DA0D3 /* ExercisesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD5128BC12D1001DA0D3 /* ExercisesViewModel.swift */; };
+		D0E7AD5628BC16B6001DA0D3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D0E7AD5528BC16B6001DA0D3 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D092D19428BC1FAF00CA1A44 /* ExerciseDetailsCradView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsCradView.swift; sourceTree = "<group>"; };
 		D0E7AD1428BBFF47001DA0D3 /* GymondoCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymondoCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E7AD1728BBFF47001DA0D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0E7AD1928BBFF47001DA0D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D0E7AD1B28BBFF47001DA0D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D0E7AD1E28BBFF47001DA0D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0E7AD1B28BBFF47001DA0D3 /* ExercisesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesListViewController.swift; sourceTree = "<group>"; };
 		D0E7AD2028BBFF49001DA0D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0E7AD2328BBFF49001DA0D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0E7AD2528BBFF49001DA0D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +54,10 @@
 		D0E7AD3428BBFF49001DA0D3 /* GymondoCodeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymondoCodeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E7AD3828BBFF49001DA0D3 /* GymondoCodeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymondoCodeChallengeUITests.swift; sourceTree = "<group>"; };
 		D0E7AD3A28BBFF49001DA0D3 /* GymondoCodeChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymondoCodeChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D0E7AD4828BC0246001DA0D3 /* ExerciseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseModel.swift; sourceTree = "<group>"; };
+		D0E7AD4B28BC04CB001DA0D3 /* ExerciseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseManager.swift; sourceTree = "<group>"; };
+		D0E7AD4F28BC074A001DA0D3 /* ExerciseCardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		D0E7AD5128BC12D1001DA0D3 /* ExercisesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E7AD5628BC16B6001DA0D3 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D092D19228BC1F6800CA1A44 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D0E7AD1B28BBFF47001DA0D3 /* ExercisesListViewController.swift */,
+				D0E7AD4F28BC074A001DA0D3 /* ExerciseCardCollectionViewCell.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D092D19328BC1F7D00CA1A44 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				D092D19428BC1FAF00CA1A44 /* ExerciseDetailsCradView.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 		D0E7AD0B28BBFF47001DA0D3 = {
 			isa = PBXGroup;
 			children = (
@@ -101,8 +128,10 @@
 			children = (
 				D0E7AD1728BBFF47001DA0D3 /* AppDelegate.swift */,
 				D0E7AD1928BBFF47001DA0D3 /* SceneDelegate.swift */,
-				D0E7AD1B28BBFF47001DA0D3 /* ViewController.swift */,
-				D0E7AD1D28BBFF47001DA0D3 /* Main.storyboard */,
+				D0E7AD4A28BC024A001DA0D3 /* Model */,
+				D0E7AD5328BC1318001DA0D3 /* ViewModel */,
+				D0E7AD4E28BC0651001DA0D3 /* Views */,
+				D0E7AD4D28BC0589001DA0D3 /* Network */,
 				D0E7AD2028BBFF49001DA0D3 /* Assets.xcassets */,
 				D0E7AD2228BBFF49001DA0D3 /* LaunchScreen.storyboard */,
 				D0E7AD2528BBFF49001DA0D3 /* Info.plist */,
@@ -127,6 +156,39 @@
 			path = GymondoCodeChallengeUITests;
 			sourceTree = "<group>";
 		};
+		D0E7AD4A28BC024A001DA0D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0E7AD4828BC0246001DA0D3 /* ExerciseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D0E7AD4D28BC0589001DA0D3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D0E7AD4B28BC04CB001DA0D3 /* ExerciseManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D0E7AD4E28BC0651001DA0D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D092D19228BC1F6800CA1A44 /* Main */,
+				D092D19328BC1F7D00CA1A44 /* Details */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D0E7AD5328BC1318001DA0D3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D0E7AD5128BC12D1001DA0D3 /* ExercisesViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +205,9 @@
 			dependencies = (
 			);
 			name = GymondoCodeChallenge;
+			packageProductDependencies = (
+				D0E7AD5528BC16B6001DA0D3 /* Kingfisher */,
+			);
 			productName = GymondoCodeChallenge;
 			productReference = D0E7AD1428BBFF47001DA0D3 /* GymondoCodeChallenge.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +280,9 @@
 				Base,
 			);
 			mainGroup = D0E7AD0B28BBFF47001DA0D3;
+			packageReferences = (
+				D0E7AD5428BC16B6001DA0D3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = D0E7AD1528BBFF47001DA0D3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +301,6 @@
 			files = (
 				D0E7AD2428BBFF49001DA0D3 /* LaunchScreen.storyboard in Resources */,
 				D0E7AD2128BBFF49001DA0D3 /* Assets.xcassets in Resources */,
-				D0E7AD1F28BBFF47001DA0D3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +325,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0E7AD1C28BBFF47001DA0D3 /* ViewController.swift in Sources */,
+				D0E7AD5228BC12D1001DA0D3 /* ExercisesViewModel.swift in Sources */,
+				D0E7AD1C28BBFF47001DA0D3 /* ExercisesListViewController.swift in Sources */,
+				D0E7AD4C28BC04CB001DA0D3 /* ExerciseManager.swift in Sources */,
+				D092D19528BC1FAF00CA1A44 /* ExerciseDetailsCradView.swift in Sources */,
 				D0E7AD1828BBFF47001DA0D3 /* AppDelegate.swift in Sources */,
 				D0E7AD1A28BBFF47001DA0D3 /* SceneDelegate.swift in Sources */,
+				D0E7AD5028BC074A001DA0D3 /* ExerciseCardCollectionViewCell.swift in Sources */,
+				D0E7AD4928BC0246001DA0D3 /* ExerciseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +369,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D0E7AD1D28BBFF47001DA0D3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D0E7AD1E28BBFF47001DA0D3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D0E7AD2228BBFF49001DA0D3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +506,6 @@
 				INFOPLIST_FILE = GymondoCodeChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -471,7 +534,6 @@
 				INFOPLIST_FILE = GymondoCodeChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -604,6 +666,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D0E7AD5428BC16B6001DA0D3 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D0E7AD5528BC16B6001DA0D3 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0E7AD5428BC16B6001DA0D3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D0E7AD0C28BBFF47001DA0D3 /* Project object */;
 }
