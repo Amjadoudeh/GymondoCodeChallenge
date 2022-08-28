@@ -16,6 +16,7 @@
 		D0E7AD2F28BBFF49001DA0D3 /* GymondoCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD2E28BBFF49001DA0D3 /* GymondoCodeChallengeTests.swift */; };
 		D0E7AD3928BBFF49001DA0D3 /* GymondoCodeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD3828BBFF49001DA0D3 /* GymondoCodeChallengeUITests.swift */; };
 		D0E7AD3B28BBFF49001DA0D3 /* GymondoCodeChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD3A28BBFF49001DA0D3 /* GymondoCodeChallengeUITestsLaunchTests.swift */; };
+		D0E7AD4928BC0246001DA0D3 /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD4828BC0246001DA0D3 /* ExerciseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D0E7AD3428BBFF49001DA0D3 /* GymondoCodeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymondoCodeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E7AD3828BBFF49001DA0D3 /* GymondoCodeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymondoCodeChallengeUITests.swift; sourceTree = "<group>"; };
 		D0E7AD3A28BBFF49001DA0D3 /* GymondoCodeChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymondoCodeChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D0E7AD4828BC0246001DA0D3 /* ExerciseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				D0E7AD2028BBFF49001DA0D3 /* Assets.xcassets */,
 				D0E7AD2228BBFF49001DA0D3 /* LaunchScreen.storyboard */,
 				D0E7AD2528BBFF49001DA0D3 /* Info.plist */,
+				D0E7AD4A28BC024A001DA0D3 /* Model */,
 			);
 			path = GymondoCodeChallenge;
 			sourceTree = "<group>";
@@ -125,6 +128,14 @@
 				D0E7AD3A28BBFF49001DA0D3 /* GymondoCodeChallengeUITestsLaunchTests.swift */,
 			);
 			path = GymondoCodeChallengeUITests;
+			sourceTree = "<group>";
+		};
+		D0E7AD4A28BC024A001DA0D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0E7AD4828BC0246001DA0D3 /* ExerciseModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 				D0E7AD1C28BBFF47001DA0D3 /* ViewController.swift in Sources */,
 				D0E7AD1828BBFF47001DA0D3 /* AppDelegate.swift in Sources */,
 				D0E7AD1A28BBFF47001DA0D3 /* SceneDelegate.swift in Sources */,
+				D0E7AD4928BC0246001DA0D3 /* ExerciseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
