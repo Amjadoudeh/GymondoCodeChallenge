@@ -17,6 +17,7 @@
 		D0E7AD3928BBFF49001DA0D3 /* GymondoCodeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD3828BBFF49001DA0D3 /* GymondoCodeChallengeUITests.swift */; };
 		D0E7AD3B28BBFF49001DA0D3 /* GymondoCodeChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD3A28BBFF49001DA0D3 /* GymondoCodeChallengeUITestsLaunchTests.swift */; };
 		D0E7AD4928BC0246001DA0D3 /* ExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD4828BC0246001DA0D3 /* ExerciseModel.swift */; };
+		D0E7AD4C28BC04CB001DA0D3 /* ExerciseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD4B28BC04CB001DA0D3 /* ExerciseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D0E7AD3828BBFF49001DA0D3 /* GymondoCodeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymondoCodeChallengeUITests.swift; sourceTree = "<group>"; };
 		D0E7AD3A28BBFF49001DA0D3 /* GymondoCodeChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymondoCodeChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D0E7AD4828BC0246001DA0D3 /* ExerciseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseModel.swift; sourceTree = "<group>"; };
+		D0E7AD4B28BC04CB001DA0D3 /* ExerciseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,8 @@
 		D0E7AD1628BBFF47001DA0D3 /* GymondoCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				D0E7AD4A28BC024A001DA0D3 /* Model */,
+				D0E7AD4D28BC0589001DA0D3 /* Network */,
 				D0E7AD1728BBFF47001DA0D3 /* AppDelegate.swift */,
 				D0E7AD1928BBFF47001DA0D3 /* SceneDelegate.swift */,
 				D0E7AD1B28BBFF47001DA0D3 /* ViewController.swift */,
@@ -108,7 +112,6 @@
 				D0E7AD2028BBFF49001DA0D3 /* Assets.xcassets */,
 				D0E7AD2228BBFF49001DA0D3 /* LaunchScreen.storyboard */,
 				D0E7AD2528BBFF49001DA0D3 /* Info.plist */,
-				D0E7AD4A28BC024A001DA0D3 /* Model */,
 			);
 			path = GymondoCodeChallenge;
 			sourceTree = "<group>";
@@ -136,6 +139,14 @@
 				D0E7AD4828BC0246001DA0D3 /* ExerciseModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D0E7AD4D28BC0589001DA0D3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D0E7AD4B28BC04CB001DA0D3 /* ExerciseManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0E7AD1C28BBFF47001DA0D3 /* ViewController.swift in Sources */,
+				D0E7AD4C28BC04CB001DA0D3 /* ExerciseManager.swift in Sources */,
 				D0E7AD1828BBFF47001DA0D3 /* AppDelegate.swift in Sources */,
 				D0E7AD1A28BBFF47001DA0D3 /* SceneDelegate.swift in Sources */,
 				D0E7AD4928BC0246001DA0D3 /* ExerciseModel.swift in Sources */,
