@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D092D19528BC1FAF00CA1A44 /* ExerciseDetailsCradView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D092D19428BC1FAF00CA1A44 /* ExerciseDetailsCradView.swift */; };
 		D0E7AD1828BBFF47001DA0D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD1728BBFF47001DA0D3 /* AppDelegate.swift */; };
 		D0E7AD1A28BBFF47001DA0D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD1928BBFF47001DA0D3 /* SceneDelegate.swift */; };
 		D0E7AD1C28BBFF47001DA0D3 /* ExercisesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD1B28BBFF47001DA0D3 /* ExercisesListViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D092D19428BC1FAF00CA1A44 /* ExerciseDetailsCradView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsCradView.swift; sourceTree = "<group>"; };
 		D0E7AD1428BBFF47001DA0D3 /* GymondoCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymondoCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E7AD1728BBFF47001DA0D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0E7AD1928BBFF47001DA0D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D092D19228BC1F6800CA1A44 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D0E7AD1B28BBFF47001DA0D3 /* ExercisesListViewController.swift */,
+				D0E7AD4F28BC074A001DA0D3 /* ExerciseCardCollectionViewCell.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D092D19328BC1F7D00CA1A44 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				D092D19428BC1FAF00CA1A44 /* ExerciseDetailsCradView.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 		D0E7AD0B28BBFF47001DA0D3 = {
 			isa = PBXGroup;
 			children = (
@@ -156,8 +175,8 @@
 		D0E7AD4E28BC0651001DA0D3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D0E7AD1B28BBFF47001DA0D3 /* ExercisesListViewController.swift */,
-				D0E7AD4F28BC074A001DA0D3 /* ExerciseCardCollectionViewCell.swift */,
+				D092D19228BC1F6800CA1A44 /* Main */,
+				D092D19328BC1F7D00CA1A44 /* Details */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -309,6 +328,7 @@
 				D0E7AD5228BC12D1001DA0D3 /* ExercisesViewModel.swift in Sources */,
 				D0E7AD1C28BBFF47001DA0D3 /* ExercisesListViewController.swift in Sources */,
 				D0E7AD4C28BC04CB001DA0D3 /* ExerciseManager.swift in Sources */,
+				D092D19528BC1FAF00CA1A44 /* ExerciseDetailsCradView.swift in Sources */,
 				D0E7AD1828BBFF47001DA0D3 /* AppDelegate.swift in Sources */,
 				D0E7AD1A28BBFF47001DA0D3 /* SceneDelegate.swift in Sources */,
 				D0E7AD5028BC074A001DA0D3 /* ExerciseCardCollectionViewCell.swift in Sources */,

@@ -46,7 +46,7 @@ class ExerciseCardCollectionViewCell: UICollectionViewCell {
 
     public func configure(label: String, url: URL?) {
         exLabelView.text = label
-        if let url = url  {
+        if let url = url {
             exImageView.kf.setImage(with: url, placeholder: UIImage(named: "placeholderImage"))
         }
     }

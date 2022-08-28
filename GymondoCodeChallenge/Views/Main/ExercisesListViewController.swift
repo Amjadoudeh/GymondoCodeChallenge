@@ -16,7 +16,7 @@ class ExercisesListViewController: UIViewController {
         bgImageView.translatesAutoresizingMaskIntoConstraints = false
         return bgImageView
     }()
-    
+
     // constructor injection
     init(viewModel: ExercisesViewModel) {
         self.viewModel = viewModel
@@ -66,12 +66,17 @@ extension ExercisesListViewController: UICollectionViewDataSource, UICollectionV
             imageURL = URL(string: imageURLString)
         }
         cell.configure(label: exercise.name, url: imageURL)
-        
+
         cell.layer.shadowColor = UIColor.gray.cgColor
         cell.layer.shadowOffset = CGSize(width: 0, height: 1.0)
         cell.layer.shadowOpacity = 1.0
         cell.layer.masksToBounds = false
         return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        _ = exercises[indexPath.row]
+        self.navigationController?.pushViewController(UIHostingController(rootView: ExerciseDetailsCradView()), animated: true)
     }
 }
 
