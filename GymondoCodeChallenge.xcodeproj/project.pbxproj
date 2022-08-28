@@ -105,10 +105,10 @@
 		D0E7AD1628BBFF47001DA0D3 /* GymondoCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				D0E7AD4A28BC024A001DA0D3 /* Model */,
-				D0E7AD4D28BC0589001DA0D3 /* Network */,
 				D0E7AD1728BBFF47001DA0D3 /* AppDelegate.swift */,
 				D0E7AD1928BBFF47001DA0D3 /* SceneDelegate.swift */,
+				D0E7AD4A28BC024A001DA0D3 /* Model */,
+				D0E7AD4D28BC0589001DA0D3 /* Network */,
 				D0E7AD4E28BC0651001DA0D3 /* Views */,
 				D0E7AD1D28BBFF47001DA0D3 /* Main.storyboard */,
 				D0E7AD2028BBFF49001DA0D3 /* Assets.xcassets */,
