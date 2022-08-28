@@ -8,7 +8,15 @@ class ExercisesListViewController: UIViewController {
     var exercises: [Exercise] = []
     var cancellables = Set<AnyCancellable>()
     var collectionView: UICollectionView!
-
+    let backgroundImageView: UIImageView = {
+        let bgImageView = UIImageView(frame: .zero)
+        bgImageView.image = UIImage(named: "spp")
+        bgImageView.contentMode = .scaleAspectFill
+        bgImageView.clipsToBounds = true
+        bgImageView.translatesAutoresizingMaskIntoConstraints = false
+        return bgImageView
+    }()
+    
     // constructor injection
     init(viewModel: ExercisesViewModel) {
         self.viewModel = viewModel
@@ -58,6 +66,11 @@ extension ExercisesListViewController: UICollectionViewDataSource, UICollectionV
             imageURL = URL(string: imageURLString)
         }
         cell.configure(label: exercise.name, url: imageURL)
+        
+        cell.layer.shadowColor = UIColor.gray.cgColor
+        cell.layer.shadowOffset = CGSize(width: 0, height: 1.0)
+        cell.layer.shadowOpacity = 1.0
+        cell.layer.masksToBounds = false
         return cell
     }
 }
@@ -82,7 +95,7 @@ private extension ExercisesListViewController {
         collectionView.delegate = self
         collectionView.register(ExerciseCardCollectionViewCell.self, forCellWithReuseIdentifier: ExerciseCardCollectionViewCell.identifier)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.backgroundColor = .white.withAlphaComponent(0.8)
+        collectionView.backgroundView = backgroundImageView
         view.addSubview(collectionView)
     }
 

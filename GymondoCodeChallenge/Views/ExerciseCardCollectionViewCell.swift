@@ -7,7 +7,7 @@ class ExerciseCardCollectionViewCell: UICollectionViewCell {
     private let exImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(systemName: "")
-        imageView.backgroundColor = .white.withAlphaComponent(0.2)
+        imageView.backgroundColor = .white.withAlphaComponent(0.9)
         imageView.contentMode = .scaleAspectFit
         imageView.clipsToBounds = true
         return imageView
@@ -18,9 +18,9 @@ class ExerciseCardCollectionViewCell: UICollectionViewCell {
         labelView.text = "House"
         labelView.font = UIFont(name: "Sans-serif", size: 16)
         labelView.font = UIFont.systemFont(ofSize: 16, weight: .medium)
-        labelView.textColor = .black.withAlphaComponent(0.6)
+        labelView.textColor = .black.withAlphaComponent(0.8)
         labelView.textAlignment = .center
-        labelView.backgroundColor = .white.withAlphaComponent(0.3)
+        labelView.backgroundColor = .white
 
         return labelView
     }()
