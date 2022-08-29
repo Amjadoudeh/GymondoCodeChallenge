@@ -35,8 +35,8 @@ class ExercisesViewModel: ObservableObject {
 class ExerciseDetailsViewModel: ObservableObject {
     @Published var state: ExerciseDetailState = .loading
     var cancellables = Set<AnyCancellable>()
-    private var exerciseService: ExerciseManager
-    private var exerciseId: Int
+    private (set) var exerciseService: ExerciseManager
+    private (set) var exerciseId: Int
     init(exerciseService: ExerciseManager, exerciseId: Int) {
         self.exerciseService = exerciseService
         self.exerciseId = exerciseId
