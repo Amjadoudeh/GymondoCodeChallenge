@@ -19,8 +19,9 @@ Generally, I use Jira tickets or github issues.
  
  
 ## Screenshots
+<img src="https://user-images.githubusercontent.com/74506206/187203327-14006ff3-cd53-41fc-a5a3-9a0f5504f621.png" width="270" height="570">
+<img src="https://user-images.githubusercontent.com/74506206/187201972-8d09a776-fc05-4761-86bc-bc19dc517def.png" width="270" height="570">
 
-<a href="" alt="1" border="0" width ="150" height ="267"></a>
 
 
 ## Compatibility
