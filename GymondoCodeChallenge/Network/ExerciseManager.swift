@@ -36,7 +36,7 @@ class ExerciseManager: ObservableObject {
                 return
             }
             do {
-                let list = try JSONDecoder().decode(ExerciseImageList.self, from: data)
+                let list = try JSONDecoder().decode([ExecrciseImage].self, from: data)
                 print("Fetching")
                 guard let exerciseIndex = self.exercises.firstIndex(where: { $0.id == exerciseID }) else {
                     print("no index found")
@@ -45,7 +45,7 @@ class ExerciseManager: ObservableObject {
                 }
                 DispatchQueue.main.async {
                     print("cellIndex")
-                    self.exercises[exerciseIndex].images = list.results
+                    self.exercises[exerciseIndex].images = list
                 }
             } catch {
                 print(error)

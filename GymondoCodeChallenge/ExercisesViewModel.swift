@@ -9,7 +9,7 @@ enum ExercisesState {
 
 enum ExerciseDetailState {
     case loading
-    case loaded(exercies: [Exercise])
+    case loaded(exercies: Exercise)
     case error
 }
 
@@ -29,24 +29,24 @@ class ExercisesViewModel: ObservableObject {
         state = .loading
         self.exerciseService.fetchExcercises()
     }
-    
-}
 
+}
 
 class ExerciseDetailsViewModel: ObservableObject {
     @Published var state: ExerciseDetailState = .loading
     var cancellables = Set<AnyCancellable>()
     private var exerciseService: ExerciseManager
-    init(exerciseService: ExerciseManager) {
+    private var exerciseId: Int
+    init(exerciseService: ExerciseManager, exerciseId: Int) {
         self.exerciseService = exerciseService
-
-        self.exerciseService.$exercises.sink {
-            self.state = .loaded(exercies: $0)
-        }.store(in: &cancellables)
+        self.exerciseId = exerciseId
     }
 
-    func loadExerciseImages(exerciseID: Int) {
+    func loadExercise() {
         state = .loading
-        self.exerciseService.fetchExcerciseImages(exerciseID: exerciseID)
+        self.exerciseService.fetchExcerciseImages(exerciseID: self.exerciseId)
+        self.exerciseService.$exercises.map { $0.first(where: { $0.id == self.exerciseId })!}.sink {
+            self.state = .loaded(exercies: $0)
+        }.store(in: &cancellables)
     }
 }

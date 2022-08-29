@@ -9,8 +9,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: windowScene)
-        let vm = ExercisesViewModel(exerciseService: ExerciseManager())
+        let em = ExerciseManager()
+        let vm = ExercisesViewModel(exerciseService: em)
         let vc = ExercisesListViewController(viewModel: vm)
+        vc.buildDetailsViewModel = { id in
+            ExerciseDetailsViewModel(exerciseService: em, exerciseId: id)
+        }
         nav = UINavigationController(rootViewController: vc)
         nav.setViewControllers([vc], animated: true)
         window.rootViewController = nav
