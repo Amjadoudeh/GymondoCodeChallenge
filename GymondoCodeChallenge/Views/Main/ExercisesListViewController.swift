@@ -6,8 +6,10 @@ class ExercisesListViewController: UIViewController {
     @ObservedObject var viewModel: ExercisesViewModel
 
     var exercises: [Exercise] = []
+    var buildDetailsViewModel: ((Int) -> ExerciseDetailsViewModel)!
     var cancellables = Set<AnyCancellable>()
     var collectionView: UICollectionView!
+
     let backgroundImageView: UIImageView = {
         let bgImageView = UIImageView(frame: .zero)
         bgImageView.image = UIImage(named: "spp")
@@ -66,7 +68,6 @@ extension ExercisesListViewController: UICollectionViewDataSource, UICollectionV
             imageURL = URL(string: imageURLString)
         }
         cell.configure(label: exercise.name, url: imageURL)
-
         cell.layer.shadowColor = UIColor.gray.cgColor
         cell.layer.shadowOffset = CGSize(width: 0, height: 1.0)
         cell.layer.shadowOpacity = 1.0
@@ -75,8 +76,8 @@ extension ExercisesListViewController: UICollectionViewDataSource, UICollectionV
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        _ = exercises[indexPath.row]
-        self.navigationController?.pushViewController(UIHostingController(rootView: ExerciseDetailsCradView()), animated: true)
+        let isTapped = exercises[indexPath.row]
+        self.navigationController?.pushViewController(UIHostingController(rootView: ExerciseDetailsCradView(viewModel: buildDetailsViewModel(isTapped.id))), animated: true)
     }
 }
 

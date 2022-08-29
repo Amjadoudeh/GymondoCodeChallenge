@@ -1,20 +1,58 @@
-//
-//  ExerciseDetailsCradView.swift
-//  GymondoCodeChallenge
-//
-//  Created by Amjad Oudeh on 29.08.22.
-//
-
 import SwiftUI
+import Kingfisher
 
 struct ExerciseDetailsCradView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    @ObservedObject var viewModel: ExerciseDetailsViewModel
 
-struct ExerciseDetailsCradView_Previews: PreviewProvider {
-    static var previews: some View {
-        ExerciseDetailsCradView()
+    var body: some View {
+        Group {
+            switch viewModel.state {
+            case .loaded(exercies: let exercise):
+                VStack {
+                    // MARK: Exercise title
+                    Text(exercise.name)
+                        .font(.title.weight(.medium))
+                    Spacer()
+                    // MARK: Exercise description
+                    Text(exercise.description
+                        .removeHTML()
+                        .removeLine()
+                    )
+                    .font(.callout)
+                    .multilineTextAlignment(.leading)
+                    .lineLimit(.none)
+                    Spacer()
+                    // MARK: Exercise images
+                    ScrollView(.horizontal, showsIndicators: true) {
+                        HStack {
+                            ForEach(exercise.images ?? []) { image in
+                                KFImage(URL(string: image.image))
+                                    .resizable()
+                                    .cornerRadius(5)
+                                    .frame(width: 100, height: 100)
+                                    .padding()
+                            }
+                        }
+                    }
+                    Spacer()
+
+                    // MARK: Exercise variations
+                    ScrollView(.horizontal, showsIndicators: true) {
+                        HStack {
+                            ForEach(exercise.variations , id: \.self) { variation in
+                                Text(String(variation))
+                            }
+                        }
+                    }
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding()
+
+            default:
+                EmptyView()
+            }
+        }.onAppear {
+            viewModel.loadExercise()
+        }
     }
 }

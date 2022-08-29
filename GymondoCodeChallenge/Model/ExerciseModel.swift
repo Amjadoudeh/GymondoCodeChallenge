@@ -21,7 +21,7 @@ struct Exercise: Identifiable, Decodable {
 }
 
 struct ExerciseImageList: Decodable {
-    var results: [ExecrciseImage]
+    var results: [ExecrciseImage]?
 }
 
 struct ExecrciseImage: Identifiable, Decodable {
