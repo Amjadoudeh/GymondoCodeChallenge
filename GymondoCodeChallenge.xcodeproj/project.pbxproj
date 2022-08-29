@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D092D19528BC1FAF00CA1A44 /* ExerciseDetailsCradView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D092D19428BC1FAF00CA1A44 /* ExerciseDetailsCradView.swift */; };
+		D092D19B28BC8CB700CA1A44 /* StringCleaner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D092D19A28BC8CB700CA1A44 /* StringCleaner.swift */; };
 		D0E7AD1828BBFF47001DA0D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD1728BBFF47001DA0D3 /* AppDelegate.swift */; };
 		D0E7AD1A28BBFF47001DA0D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD1928BBFF47001DA0D3 /* SceneDelegate.swift */; };
 		D0E7AD1C28BBFF47001DA0D3 /* ExercisesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E7AD1B28BBFF47001DA0D3 /* ExercisesListViewController.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		D092D19428BC1FAF00CA1A44 /* ExerciseDetailsCradView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsCradView.swift; sourceTree = "<group>"; };
+		D092D19A28BC8CB700CA1A44 /* StringCleaner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCleaner.swift; sourceTree = "<group>"; };
 		D0E7AD1428BBFF47001DA0D3 /* GymondoCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymondoCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E7AD1728BBFF47001DA0D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0E7AD1928BBFF47001DA0D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,14 @@
 			path = Details;
 			sourceTree = "<group>";
 		};
+		D092D19928BC8CA000CA1A44 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D092D19A28BC8CB700CA1A44 /* StringCleaner.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		D0E7AD0B28BBFF47001DA0D3 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +142,7 @@
 				D0E7AD5328BC1318001DA0D3 /* ViewModel */,
 				D0E7AD4E28BC0651001DA0D3 /* Views */,
 				D0E7AD4D28BC0589001DA0D3 /* Network */,
+				D092D19928BC8CA000CA1A44 /* Helpers */,
 				D0E7AD2028BBFF49001DA0D3 /* Assets.xcassets */,
 				D0E7AD2228BBFF49001DA0D3 /* LaunchScreen.storyboard */,
 				D0E7AD2528BBFF49001DA0D3 /* Info.plist */,
@@ -331,6 +342,7 @@
 				D092D19528BC1FAF00CA1A44 /* ExerciseDetailsCradView.swift in Sources */,
 				D0E7AD1828BBFF47001DA0D3 /* AppDelegate.swift in Sources */,
 				D0E7AD1A28BBFF47001DA0D3 /* SceneDelegate.swift in Sources */,
+				D092D19B28BC8CB700CA1A44 /* StringCleaner.swift in Sources */,
 				D0E7AD5028BC074A001DA0D3 /* ExerciseCardCollectionViewCell.swift in Sources */,
 				D0E7AD4928BC0246001DA0D3 /* ExerciseModel.swift in Sources */,
 			);
