@@ -37,10 +37,12 @@ struct ExerciseDetailsCradView: View {
                     Spacer()
 
                     // MARK: Exercise variations
-                    NavigationLink {
-
-                    } label: {
-
+                    ScrollView(.horizontal, showsIndicators: true) {
+                        HStack {
+                            ForEach(exercise.variations , id: \.self) { variation in
+                                Text(String(variation))
+                            }
+                        }
                     }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
