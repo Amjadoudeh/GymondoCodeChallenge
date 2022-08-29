@@ -44,6 +44,7 @@
 /* Begin PBXFileReference section */
 		D092D19428BC1FAF00CA1A44 /* ExerciseDetailsCradView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsCradView.swift; sourceTree = "<group>"; };
 		D092D19A28BC8CB700CA1A44 /* StringCleaner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCleaner.swift; sourceTree = "<group>"; };
+		D092D19C28BCB48400CA1A44 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D0E7AD1428BBFF47001DA0D3 /* GymondoCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymondoCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E7AD1728BBFF47001DA0D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0E7AD1928BBFF47001DA0D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +117,7 @@
 		D0E7AD0B28BBFF47001DA0D3 = {
 			isa = PBXGroup;
 			children = (
+				D092D19C28BCB48400CA1A44 /* README.md */,
 				D0E7AD1628BBFF47001DA0D3 /* GymondoCodeChallenge */,
 				D0E7AD2D28BBFF49001DA0D3 /* GymondoCodeChallengeTests */,
 				D0E7AD3728BBFF49001DA0D3 /* GymondoCodeChallengeUITests */,

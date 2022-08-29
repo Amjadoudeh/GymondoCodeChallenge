@@ -75,7 +75,7 @@ extension ExercisesListViewController: UICollectionViewDataSource, UICollectionV
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        _ = exercises[indexPath.row]
+        let isTapped = exercises[indexPath.row]
         self.navigationController?.pushViewController(UIHostingController(rootView: ExerciseDetailsCradView()), animated: true)
     }
 }

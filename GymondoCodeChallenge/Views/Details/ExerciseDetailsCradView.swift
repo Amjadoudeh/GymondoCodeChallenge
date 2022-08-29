@@ -1,15 +1,18 @@
 import SwiftUI
 
 struct ExerciseDetailsCradView: View {
-
+    
     var body: some View {
         VStack {
             // MARK: Exercise title
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Text("Hello world")
                 .font(.title.weight(.medium))
             Spacer()
             // MARK: Exercise description
-            Text("in eine aufrechte Position setzen, bei der die Beine hüftbreit geöffnet sind den Rücken, die Knie und die Oberschenkelaußenseite an die jeweiligen Polster pressen mit den Händen an den Griffen festhalten die Oberschenkel bis zum Anschlagpunkt der Hebelarme auseinander drücken danach die Beine wieder zusammen führen das Gesäß nicht vom Sitz abheben beim Auseinanderdrücken der Hebelarme aus- und beim Zusammenführen einatme")
+            Text("in eine aufrechte Position setzen, bei der die Beine hüftbreit geöffnet sind den Rücken, die Knie und die Oberschenkelaußenseite an die jeweiligen Polster pressen mit den Händen an den Griffen festhalten die Oberschenkel bis zum Anschlagpunkt der Hebelarme auseinander drücken danach die Beine wieder zusammen führen das Gesäß nicht vom Sitz abheben beim Auseinanderdrücken der Hebelarme aus- und beim Zusammenführen einatme"
+                .removeHTML()
+                .removeLine()
+            )
                 .font(.callout)
                 .multilineTextAlignment(.leading)
                 .lineLimit(.none)
