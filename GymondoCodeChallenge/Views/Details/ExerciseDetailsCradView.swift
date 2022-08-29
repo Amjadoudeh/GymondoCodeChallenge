@@ -1,15 +1,17 @@
 import SwiftUI
 
 struct ExerciseDetailsCradView: View {
-    
+    @ObservedObject var exerciseManager = ExerciseManager()
+    var exercise: Exercise
+
     var body: some View {
         VStack {
             // MARK: Exercise title
-            Text("Hello world")
+            Text(exercise.name)
                 .font(.title.weight(.medium))
             Spacer()
             // MARK: Exercise description
-            Text("in eine aufrechte Position setzen, bei der die Beine hüftbreit geöffnet sind den Rücken, die Knie und die Oberschenkelaußenseite an die jeweiligen Polster pressen mit den Händen an den Griffen festhalten die Oberschenkel bis zum Anschlagpunkt der Hebelarme auseinander drücken danach die Beine wieder zusammen führen das Gesäß nicht vom Sitz abheben beim Auseinanderdrücken der Hebelarme aus- und beim Zusammenführen einatme"
+            Text(exercise.description
                 .removeHTML()
                 .removeLine()
             )
@@ -20,8 +22,9 @@ struct ExerciseDetailsCradView: View {
             // MARK: Exercise images
             ScrollView(.horizontal, showsIndicators: true) {
                 HStack {
+
                     ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { _ in
-                        Image("sn")
+                        Image( "sn")
                             .resizable()
                             .cornerRadius(5)
                         .frame(width: 100, height: 100)
@@ -45,6 +48,6 @@ struct ExerciseDetailsCradView: View {
 
 struct ExerciseDetailsCradView_Previews: PreviewProvider {
     static var previews: some View {
-        ExerciseDetailsCradView()
+        ExerciseDetailsCradView(exercise: Exercise.init(id: 3, name: "Big Rami", exercise_base_id: 5, description: "just run", variations: []))
     }
 }
