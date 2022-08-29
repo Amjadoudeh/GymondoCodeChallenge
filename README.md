@@ -39,6 +39,13 @@ https://user-images.githubusercontent.com/74506206/187225017-bad1f1fd-2a35-4c74-
 $ git clone https://github.com/Amjadoudeh/GymondoCodeChallenge
 $ cd GymondoCodeChallenge
 ```
+# Important to Read:
+
+By using iOS 15, the same app will be easier to build and we don't need to install KingFisher since it support Async images. 
+
+The Endpoints are not the best, and many exercises have no images ( when we match the id ).
+
+Looking forward to hearing your feedback! 
 
 ## Author
 
