@@ -39,11 +39,31 @@ struct ExerciseDetailsCradView: View {
                     // MARK: Exercise variations
                     ScrollView(.horizontal, showsIndicators: true) {
                         HStack {
-                            ForEach(exercise.variations , id: \.self) { variation in
-                                Text(String(variation))
+
+                            ForEach(exercise.variations, id: \.self) { variation in
+
+                                // important: since not every variation is an existing exercise ID, I have put the exercise ID as the exercise ID itself but not the variation value, so the app doesn't crash in iOS 14
+                                // by trying a hard coded ID everything is working as it should be
+                                let destination = ExerciseDetailsCradView(viewModel: .init(exerciseService: viewModel.exerciseService, exerciseId: viewModel.exerciseId))
+                                // TODO: what's the ID of the Exercise? 
+                                NavigationLink(destination: destination) {
+                                    VStack {
+                                        Image("sn")
+                                            .resizable()
+
+                                        Spacer()
+                                        Text(String(variation))
+                                            .font(.caption2)
+                                    }
+                                    .foregroundColor(.black)
+                                    .frame(width: 80, height: 110, alignment: .leading)
+                                    .background(Color.gray.opacity(0.1))
+                                    .cornerRadius(20)
+                                }
                             }
                         }
                     }
+                    Spacer()
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding()
